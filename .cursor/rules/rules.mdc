@@ -1,0 +1,42 @@
+---
+description: Rules for working on the Analog Discovery agent skills repository
+alwaysApply: true
+---
+
+# Rules
+
+Follow these rules when changing this repository.
+
+## Process Rules
+
+Before making a plan or any changes:
+
+- Read `README.md`, `CONTRIBUTING.md`, and the full contents of `docs/`.
+
+Before presenting any changes to the user:
+
+- Run `ruff check .`, `python tools/validate_skills.py`, and `python -m pytest`; all must pass.
+- Run `python tools/run_snippets.py --demo` for every skill whose code you changed.
+- Never run skill code that drives voltage on a real device unless the user has confirmed the wiring.
+- Update `docs/` and `README.md` to match your changes, including `docs/verification.md`.
+- Follow the branching process in `CONTRIBUTING.md`.
+- Never bump version numbers unless asked.
+
+## Skill Rules
+
+- Keep each skill atomic, concise, and under 140 lines.
+- Include only critical information, exact commands, and exact code. No background explanations.
+- Link to Digilent's documentation instead of restating it.
+- Use only SDK functions, constants, and samples that exist; the validator checks them.
+- Never include code that has not been run.
+- Frontmatter `name` equals the folder name; `description` says what the skill does and when to use it.
+
+## Python Rules
+
+- Use an object-oriented style: no one-off functions except `main`-style entry points; no module-level variables.
+- Type all function parameters and return values. Use built-in generics and `X | None`.
+- Use `pathlib` instead of `os.path`.
+- Put all imports at the top of the file, grouped stdlib, third-party, then local.
+- Give every file, class, and function a short docstring describing its purpose, with `Args`, `Returns`, and `Raises` sections where applicable.
+- Keep lines at 100 characters or fewer.
+- Never leave unused code or lint errors.

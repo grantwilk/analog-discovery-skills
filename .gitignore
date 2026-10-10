@@ -1,0 +1,17 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# Captures produced while testing skills
+captures/
+capture.csv
+capture.png
