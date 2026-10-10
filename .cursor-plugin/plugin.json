@@ -1,13 +1,13 @@
 {
-  "name": "analog-discovery-agent-skills",
-  "displayName": "Analog Discovery Agent Skills",
+  "name": "analog-discovery-skills",
+  "displayName": "Analog Discovery Skills",
   "description": "Atomic skills that let AI agents control a Digilent Analog Discovery (scope, wavegen, logic analyzer, supplies, I/O, UART/SPI/I2C/CAN) from Python through the WaveForms SDK.",
   "version": "0.1.0",
   "author": {
     "name": "Grant Wilk"
   },
   "license": "MIT",
-  "repository": "https://github.com/grantwilk/analog-discovery-agent-skills",
+  "repository": "https://github.com/grantwilk/analog-discovery-skills",
   "keywords": ["digilent", "analog-discovery", "waveforms", "oscilloscope", "logic-analyzer", "hardware", "test-and-measurement"],
   "skills": "./skills/"
 }

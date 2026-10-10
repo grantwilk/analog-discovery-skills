@@ -1,4 +1,4 @@
-# Analog Discovery Agent Skills
+# Analog Discovery Skills
 
 Atomic, concise skills that let an AI agent do from Python everything a human does in the [Digilent WaveForms](https://digilent.com/reference/software/waveforms/waveforms-3/start) GUI with an Analog Discovery: oscilloscope, waveform generator, logic analyzer, pattern generator, static I/O, power supplies, spectrum, network and impedance analysis, and UART, SPI, I2C, and CAN.
 
@@ -21,7 +21,7 @@ Start with `ad-overview`, which indexes everything.
 
 ## Install
 
-**Cursor:** install this repository as a plugin (see Cursor's [plugins reference](https://cursor.com/docs/reference/plugins)), or copy the repository folder into `~/.cursor/plugins/local/analog-discovery-agent-skills`.
+**Cursor:** install this repository as a plugin (see Cursor's [plugins reference](https://cursor.com/docs/reference/plugins)), or copy the repository folder into `~/.cursor/plugins/local/analog-discovery-skills`.
 
 **Other agents:** each folder under `skills/` is a standard `SKILL.md` skill. Copy or link the folders into your agent's skills directory.
 
